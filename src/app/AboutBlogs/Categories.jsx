@@ -25,7 +25,7 @@ const Categories = () => {
                 <p className="text-[18px] font-medium text-[rgba(94,94,94,1)]">Laptop</p>
             </div>
             <div className="flex flex-col px-3 py-2 rounded-lg shadow-[0px_0px_10px] shadow-gray-200 justify-center items-center hover:scale-105 duration-500">
-                <img src="/categoryImage/AirpodsMini.png" alt=""  className="w-40 h-40 object-cover"/>
+                <img src="/categoryImage/AirPodsMini.png" alt=""  className="w-40 h-40 object-cover"/>
                 <p className="text-[18px] font-medium text-[rgba(94,94,94,1)]">Accessories</p>
             </div>
         </div>

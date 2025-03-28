@@ -12,7 +12,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className=' flex justify-center items-center gap-3'>
-                <img src="/icon/visa.png" alt="card" />
+                <img src="/icon/Visa.png" alt="card" />
                 <img src="/icon/Mastercard.png" alt="card" />
                 <img src="/icon/Paypal.png" alt="card" />
             </div>
