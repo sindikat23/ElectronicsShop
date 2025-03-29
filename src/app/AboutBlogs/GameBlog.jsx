@@ -2,8 +2,8 @@ import { Button } from 'antd'
 
 const GameBlog = () => {
   return (
-    <div className='bg-[#ffffff] px-8 py-10'>
-        <div className='grid grid-cols-2 justify-between gap-10'>
+    <div className='bg-[#ffffff] py-10'>
+        <div className='container mx-auto grid grid-cols-2 justify-between gap-10'>
             <div className='flex flex-col justify-center items-center px-10 py-4 bg-[rgba(238,238,238,1)]'>
                 <p className='py-1 text-[16px] font-medium text-[rgba(71,71,71,1)] uppercase'>Security smart Camera</p>
                 <h1 className='py-1 pb-6 text-[24px] font-medium text-[rgba(71,71,71,1)]'>Just starting at $850</h1>

@@ -2,7 +2,7 @@ import { Button } from 'antd'
 
 const SaleIpad = () => {
     return (
-        <div className='bg-[rgba(241,246,255,1)]'>
+        <div className='bg-[rgba(241,246,255,1)] container mx-auto'>
             <div className='grid grid-cols-2 justify-center gap-10 px-10 pt-16'>
                 <div className='flex justify-center'>
                     {/* <div className='pt-60'><img className='h-60 ' src="/latestproducts/Smalliphone.png" alt="iphone" /></div> */}

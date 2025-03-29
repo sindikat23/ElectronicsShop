@@ -2,8 +2,8 @@ import React from 'react'
 
 const StarBlogs = () => {
     return (
-        <div>
-            <div className='bg-[#ffffff] px-8 py-10'>
+        <div className='bg-[#ffffff] py-10'>
+            <div className='container mx-auto'>
                 <div className='flex justify-between pb-2'>
                     <h1 className="text-[16px] font-medium text-[rgba(0,0,0,1)]">Popular Products</h1>
                     <ul className='text-[16px] font-medium flex gap-3 cursor-pointer'>

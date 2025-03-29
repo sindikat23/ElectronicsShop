@@ -7,10 +7,11 @@ import StarBlogs from "./AboutBlogs/StarBlogs";
 import SaleIphone from "./AboutBlogs/SaleIphone";
 import EventsBLog from "./AboutBlogs/EventsBLog";
 import SaleIpad from "./AboutBlogs/SaleIpad";
+import AboutService from "./AboutBlogs/AboutService";
 
 export default function Home() {
   return (
-    <div className="container mx-auto">
+    <div className="">
      <About/>
      <Categories/>
      <GameBlog/>
@@ -19,6 +20,7 @@ export default function Home() {
      <StarBlogs/>
      <EventsBLog/>
      <SaleIpad/>
+     <AboutService/>
     </div>
   );
 }

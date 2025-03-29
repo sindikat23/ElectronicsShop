@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Layout/Navbar";
 import Footer from "@/components/Layout/Footer";
+import Header from "@/components/Layout/Header";
 
 
 export const metadata = {
@@ -13,7 +14,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="uz">
-      <body className="container mx-auto">
+      <body className="">
+        <Header/>
         <Navbar/>
         {children}
         <Footer/>

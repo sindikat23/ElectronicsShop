@@ -3,7 +3,7 @@ import { Button } from 'antd'
 const SaleIphone = () => {
   return (
     <div className='bg-[rgba(241,246,255,1)]'>
-        <div className='grid grid-cols-2 justify-center gap-10 px-10 pt-8'>
+        <div className='container mx-auto grid grid-cols-2 justify-center gap-10 px-10 pt-8'>
             <div className='flex flex-col items-center justify-center text-center'>
                 <button className='text-white px-3 py-2 bg-[rgba(207,73,0,1)]'>Hurry Up!</button>
                 <h1 className='text-[48px] font-semibold text-[rgba(23,27,28,1)]'>Up To 20 % Discount Check it Out</h1>
