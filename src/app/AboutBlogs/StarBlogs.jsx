@@ -1,6 +1,24 @@
+import Image from 'next/image';
 import React from 'react'
 
-const StarBlogs = () => {
+const getProducts = async () => {
+    try {
+        const res = await fetch({
+            url: "https://dummyjson.com/products",
+            method: "GET"
+        })
+        return res.json()
+    } catch (error) {
+        console.log(error.message);
+
+    }
+}
+
+const StarBlogs = async () => {
+
+    const product_list = await getProducts()
+    console.log(product_list);
+
     return (
         <div className='bg-[#ffffff] py-10'>
             <div className='container mx-auto'>
@@ -12,7 +30,21 @@ const StarBlogs = () => {
                         <li>Laptop</li>
                     </ul>
                 </div>
-                <div className="grid grid-cols-4 gap-4 py-2 justify-between">
+                <div className="grid grid-cols-5 gap-4 py-2 justify-between">
+                    {
+                        product_list.products?.map((item) => {
+                            return <div key={item.id} className="flex flex-col p-3
+                            rounded-lg shadow-[0px_0px_10px] shadow-gray-200 justify-center items-center hover:scale-105 duration-500">
+                                <Image src={item.thumbnail} alt={item.title} width={450} height={450} className="w-40 h-40 object-cover" />
+                                <img src="/latestproducts/Feedback.png" alt="star" className='py-2' />
+                                <p className="text-[18px] font-medium text-[rgba(94,94,94,1)] py-1">{item.title.length>19?item.title.slice(0, 19) + "...":item.title}</p>
+                                <p className='text-[16px] font-semibold text-[rgba(255,91,0,1)]'>{item.price} $<del className='text-[rgba(104,105,107,1)]'> {Math.ceil((item.price+8)*100)/100} $</del></p>
+                            </div>
+                        })
+                    }
+                </div>
+                {/* eskisi */}
+                {/* <div className="grid grid-cols-4 gap-4 py-2 justify-between">
                     <div className="flex flex-col p-3
                      rounded-lg shadow-[0px_0px_10px] shadow-gray-200 justify-center items-center hover:scale-105 duration-500">
                         <img src="/latestproducts/charger.png" alt="charger" className="w-40 h-40 object-cover" />
@@ -69,7 +101,7 @@ const StarBlogs = () => {
                         <p className='text-[16px] font-semibold text-[rgba(255,91,0,1)]'>$54.00 <del className='text-[rgba(104,105,107,1)]'>$68.00</del></p>
                     </div>
 
-                </div>
+                </div> */}
             </div>
         </div>
     )

@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Layout/Navbar";
 import Footer from "@/components/Layout/Footer";
 import Header from "@/components/Layout/Header";
+import { Poppins } from 'next/font/google'
 
 
 export const metadata = {
@@ -10,15 +11,22 @@ export const metadata = {
   description: 'Mening birinchi next loyiham',
   keywords: "me, nike"
 }
+const popins = Poppins({
+  display: 'block',
+  weight: ["100", "400", '600', '900'],
+  subsets: ['latin'],
+  variable: "--font-poppins",
+
+})
 
 export default function RootLayout({ children }) {
   return (
     <html lang="uz">
-      <body className="">
-        <Header/>
-        <Navbar/>
+      <body className={popins.className}>
+        <Header />
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

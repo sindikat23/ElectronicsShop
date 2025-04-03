@@ -46,7 +46,7 @@ const Footer = () => {
                             <img src="/icon/simple.png" alt="" />
                         </div>
                         <div>
-                            <p>Copyright & Team90Degree | Built with Dji by Team90Degree.</p>
+                            <p className='text-[rgba(116,116,116,1)] font-medium text-[16px]'>Copyright & Team90Degree | Built with Dji by Team90Degree.</p>
                         </div>
                     </div>
                     <div className=' flex justify-center items-center gap-3'>
